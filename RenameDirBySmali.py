@@ -25,8 +25,7 @@ def rename_dir2(source_dir, dest_dir):  # Rename a directory
         os.renames(source_dir, dest_dir)
     except OSError as ex:
         move_files(source_dir, dest_dir)
-        #print('无法改名,尝试移动文件 ' + source_dir + ' to ' + dest_dir)
-
+        
 
 def rename_dir(source_dir, dest_dir):  # Rename a directory
     try:
